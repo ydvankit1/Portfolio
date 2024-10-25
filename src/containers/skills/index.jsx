@@ -21,12 +21,8 @@ const data = [
         percentage: "90",
       },
       {
-        skillName: "REACT JS",
+        skillName: "REACT.js",
         percentage: "90",
-      },
-      {
-        skillName: "ANGULAR",
-        percentage: "75",
       },
     ],
   },
@@ -34,25 +30,17 @@ const data = [
     label: "BACK END",
     data: [
       {
-        skillName: "JAVA",
+        skillName: "PYTHON",
         percentage: "90",
       },
       {
-        skillName: "PYTHON",
-        percentage: "65",
+        skillName: "Node.js",
+        percentage: "80",
       },
       {
-        skillName: "RUBY",
-        percentage: "45",
+        skillName: "Express.js",
+        percentage: "80",
       },
-      {
-        skillName: "C#",
-        percentage: "75",
-      },
-      {
-        skillName: "KOTLIN",
-        percentage: "55",
-      }
     ],
   },
   {
@@ -64,16 +52,8 @@ const data = [
       },
       {
         skillName: "MONGODB",
-        percentage: "68",
+        percentage: "80",
       },
-      {
-        skillName: "REDIS",
-        percentage: "35",
-      },
-      {
-        skillName: "ORACLE",
-        percentage: "88",
-      }
     ],
   },
 ];

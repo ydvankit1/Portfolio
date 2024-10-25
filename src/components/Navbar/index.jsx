@@ -17,17 +17,17 @@ const data = [
     to: "/skills",
   },
   {
-    label: "RESUME",
+    label: "EXPERIENCE & EDUCATION",
     to: "/resume",
   },
   {
-    label: "PORTFOLIO",
+    label: "PROJECTS",
     to: "/portfolio",
   },
-  {
-    label: "CONTACT",
-    to: "/contact",
-  },
+  // {
+  //   label: "CONTACT",
+  //   to: "/contact",
+  // },
 ];
 
 const Navbar = () => {

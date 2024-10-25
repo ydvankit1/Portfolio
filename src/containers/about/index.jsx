@@ -9,23 +9,19 @@ import "./styles.scss";
 const personalDetails = [
   {
     label: "Name",
-    value: "John Doe",
-  },
-  {
-    label: "Age",
-    value: "27",
+    value: "Ankit Yadav",
   },
   {
     label: "Address",
-    value: "India",
+    value: "Greater Noida, India",
   },
   {
     label: "Email",
-    value: "demo@example.com",
+    value: "ankit2004.madhuri@gmail.com",
   },
   {
     label: "Contact No",
-    value: "+11 3456789056",
+    value: "+91 9369424021",
   },
 ];
 
@@ -47,20 +43,17 @@ function About() {
             }}
             end={{ transform: "translateX(0px)" }}
           >
-            <h3 className="developerContent">Front End Developer</h3>
             <p>
-              Seasoned and independent Front End Developer with 5 years of
-              experience in blending the art of design with skill of programming
-              to deliver an immersive and engaging user experience through
-              efficient website development, proactive feature optimization, and
-              relentless debugging. Very passionate about aesthetics and UI
-              design. It is imperative that you provide a thorough and
-              professional approach to your resume. As a Front End Developer
-              you'll be judged by your ability to use UX and UI concepts and
-              follow design guidelines. It's about expressing your attention to
-              detail and how you can help implement design ideas for your future
-              employer.
-            </p>
+    Hello! I am <strong>Ankit Yadav</strong>, a passionate and motivated <strong>Final year Computer Science Engineering student</strong> with hands-on experience 
+    in <strong>full-stack development</strong> and <strong>Software Engineer Intern at MyMobiforce</strong>. I am currently pursuing a Bachelor of Technology in Computer Science and Engineering 
+    at Lloyd Institute of Engineering and Technology, Greater Noida, with a CGPA of 8.3.
+  </p>
+  <p>
+    I am proficient in programming languages like <strong>C, C++, Python, JavaScript,</strong> and have experience with modern libraries 
+    and frameworks such as React.js, Node.js, and Express.js. I have also worked with databases like MySQL, MongoDB, and Firebase.
+    I thrive in competitive environments, <strong> winning a 24-hour hackathon and earning top ranks on platforms like 
+    LeetCode (solve 650+ problems), HackerRank (4-star), and Coding Ninjas (solve 150+ problems)</strong> .
+  </p>
           </Animate>
           <Animate
             play

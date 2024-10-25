@@ -4,91 +4,25 @@ import { AiFillProject } from "react-icons/ai";
 import "./styles.scss";
 import ImageOne from "../../images/pexels-cottonbro-5483077.jpg";
 import ImageTwo from "../../images/pexels-jorge-jesus-614117.jpg";
-import ImageThree from "../../images/pexels-kevin-ku-577585.jpg";
-import ImageFour from "../../images/pexels-karolina-grabowska-4195324.jpg";
-import ImageFive from "../../images/pexels-picjumbocom-196644.jpg";
-import ImageSix from "../../images/pexels-miguel-á-padriñán-68562.jpg";
-import ImageSeven from "../../images/pexels-pixabay-39284.jpg";
-import ImageEight from "../../images/pexels-pixabay-261705.jpg";
-import ImageNine from "../../images/pexels-tirachard-kumtanom-733857.jpg";
-import ImageTen from "../../images/pexels-pixabay-276514.jpg";
 
 const portfolioData = [
   {
     sectionId: 2,
-    projectName: "Ecommerce Application",
-    projectLink: "",
+    projectName: "Voting Application",
+    projectLink: "https://github.com/ydvankit1/Quick_Vote",
     image: ImageOne,
   },
   {
     sectionId: 2,
-    projectName: "Notes App",
-    projectLink: "",
+    projectName: "Chatting Application",
+    projectLink: "https://github.com/ydvankit1/chitChat",
     image: ImageTwo,
-  },
-  {
-    sectionId: 2,
-    projectName: "Theme App",
-    projectLink: "",
-    image: ImageThree,
-  },
-  {
-    sectionId: 3,
-    projectName: "Supplier Design App",
-    projectLink: "",
-    image: ImageFour,
-  },
-  {
-    sectionId: 3,
-    projectName: "Shopping Cart Design",
-    projectLink: "",
-    image: ImageFive,
-  },
-  {
-    sectionId: 2,
-    projectName: "Notes Application",
-    projectLink: "",
-    image: ImageSeven,
-  },
-  {
-    sectionId: 3,
-    projectName: "ToDo Application",
-    projectLink: "",
-    image: ImageSix,
-  },
-  {
-    sectionId: 3,
-    projectName: "ToDo Application",
-    projectLink: "",
-    image: ImageEight,
-  },
-  {
-    sectionId: 3,
-    projectName: "ToDo Application",
-    projectLink: "",
-    image: ImageNine,
-  },
-  {
-    sectionId: 3,
-    projectName: "ToDo Application",
-    projectLink: "",
-    image: ImageTen,
   },
 ];
 
 const filteroptions = [
-  {
-    label: "All",
-    id: 1,
-  },
-  {
-    label: "Development",
-    id: 2,
-  },
-  {
-    label: "Design",
-    id: 3,
-  },
+  { label: "All", id: 1 },
+  { label: "Development", id: 2 },
 ];
 
 function Portfolio() {
@@ -99,16 +33,21 @@ function Portfolio() {
     filterValue === 1
       ? portfolioData
       : portfolioData.filter((item) => item.sectionId === filterValue);
+
   return (
     <section id="portfolio" className="portfolio">
       <PageHeaderContent
-        headerText="My Portfolio"
+        headerText="My Projects"
         icon={<AiFillProject size={40} />}
       />
       <div className="portfolio__content">
         <ul className="portfolio__content__filter">
           {filteroptions.map((option) => (
-            <li className={option.id === filterValue && 'active'} onClick={() => setFiltervalue(option.id)} key={option.id}>
+            <li
+              className={option.id === filterValue ? "active" : ""}
+              onClick={() => setFiltervalue(option.id)}
+              key={option.id}
+            >
               {option.label}
             </li>
           ))}
@@ -116,23 +55,32 @@ function Portfolio() {
         <div className="portfolio__content__cards">
           {updatedPortFolioData.map((item, index) => (
             <div
+              key={index}
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
               className="portfolio__content__cards__item"
             >
               <div className="portfolio__content__cards__item__img-wrapper">
-                <a>
-                  <img src={item.image} />
+                <a
+                  href={item.projectLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={item.image} alt={item.projectName} />
                 </a>
               </div>
-              <div className="overlay">
-                {index === hoveredIndex && (
-                  <div>
-                    <p>{item.projectName}</p>
+              {index === hoveredIndex && (
+                <div className="overlay">
+                  <p>{item.projectName}</p>
+                  <a
+                    href={item.projectLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <button>Visit</button>
-                  </div>
-                )}
-              </div>
+                  </a>
+                </div>
+              )}
             </div>
           ))}
         </div>

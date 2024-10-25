@@ -10,42 +10,31 @@ import "./styles.scss";
 const data = {
   experience: [
     {
-      title: "Consultant",
-      subTitle: "Miami, FL",
+      title: "Software Engineer Intern, ",
+      subTitle: "MyMobiforce, Noida, India",
       description:
-        " User Experience, Visual Design",
+        " Flask APIs, GraphQL APIs, Firebase, Debugging, Postman, Docker",
     },
-    {
-      title: "Senior Consultant",
-      subTitle: "London, UK",
-      description:
-        "Web development, Databases, Backend developement",
-    },
-    {
-      title: "Project Manager",
-      subTitle: "Bangalore, INDIA",
-      description:
-        "Creative Direction Project Management, Team Leading",
-    },
+
   ],
   education: [
     {
-      title: "Secondary",
-      subTitle: "ABC School",
+      title: "2018-2019, ",
+      subTitle: "Central Board of Secondary Education",
       description:
-        "10th Grade",
+        "10th Grade - 91.20% ",
     },
     {
-      title: "Higher Secondary",
-      subTitle: "ABC School of higher education",
+      title: "2020-2021, ",
+      subTitle: "Central Board of Secondary Education",
       description:
-        "12th Grade in Science",
+        "12th Grade - 93.60%",
     },
     {
-      title: "B.Tech",
-      subTitle: "XYZ institute of technology",
+      title: "Bachelor of Technology (2021-2025)",
+      subTitle: "Lloyd Institute of Engineering and Technology (AKTU)",
       description:
-        "Bachelor of technology in computer science",
+        "Computer Science Engineering - 8.3 CGPA",
     },
   ],
 };
@@ -54,7 +43,7 @@ function Resume() {
   return (
     <section id="resume" className="resume">
       <PageHeaderContent
-        headerText="My Resume"
+        headerText="My Experience & Education"
         icon={<FaBlackTie size={40} />}
       />
       <div className="timeline">
@@ -73,7 +62,7 @@ function Resume() {
                 contentArrowStyle={{
                   borderRight: "7px solid  rgb(33, 150, 243)",
                 }}
-                date="2011 - present"
+                date="Feb 2024 - Aug 2024"
                 iconStyle={{ background: "#181818", color: "var(--selected-theme-main-color)" }}
                 icon={<MdWork />}
                 dateClassName="vertical-timeline-element-custom-date"
@@ -106,7 +95,7 @@ function Resume() {
                 contentArrowStyle={{
                   borderRight: "7px solid  rgb(33, 150, 243)",
                 }}
-                date="2011 - present"
+                // date="2018 - 2019"
                 iconStyle={{ background: "#181818", color: "var(--selected-theme-main-color)" }}
                 icon={<MdWork />}
               >
