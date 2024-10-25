@@ -11,7 +11,6 @@ Welcome to my portfolio website! This project is a showcase of my skills, projec
 - **Responsive Design:** The website is designed to be fully responsive, ensuring a seamless experience across various devices and screen sizes.
 - **Project Showcase:** Explore my projects and see what I've been working on.
 - **About Me Section:** Learn more about me, my background, and my skills.
-- **Contact Form:** Get in touch with me easily through the contact form.
 
 ## Technologies Used
 
@@ -25,8 +24,6 @@ While the website is functional, there are still areas that are under developmen
 
 - [ ] Adding more projects and case studies.
 - [ ] Enhancing the design and layout for better user experience.
-- [ ] Improving accessibility and performance.
-- [ ] Integrating animations and interactive elements.
 - [ ] Adding a blog section to share insights and experiences.
 
 ## How to View the Website
